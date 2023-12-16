@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "llama-index-project"
+version = "0.1.0"
+description = ""
+authors = ["Rajat Nigam <rajatnigam89@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+llama-index = "^0.9.13"
+black = "^23.11.0"
+transformers = "^4.35.2"
+torch = "^2.1.1"
+pypdf = "^3.17.1"
+accelerate = "^0.25.0"
+safetensors = "^0.4.1"
+instructorembedding = "^1.0.1"
+huggingface-hub = "^0.19.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+llm = "main:root"
