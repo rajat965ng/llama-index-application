@@ -45,6 +45,10 @@ answering follow-up questions.
 - Step 3
   - Create a `ServiceContext` container which is a utility container for LlamaIndex index and query classes. The container contains the following objects that are commonly used for configuring every index and query, such as the LLM, the PromptHelper (for configuring input size/chunk size), the BaseEmbedding (for configuring the embedding model), and more.
   - Initialize `Llamaindex` query engine which is a generic interface that allows you to ask question over your data. A query engine takes in a natural language query, and returns a rich response. It is most often (but not always) built on one or many indexes via retrievers. You can compose multiple query engines to achieve more advanced capability.
+
+## Execute QnA
+- `poetry install`
+- `poetry run llm`
   
 ## Result
 - ![](images/result.png)
